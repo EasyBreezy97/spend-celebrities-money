@@ -1,10 +1,14 @@
-# Run app locally
+# DEMO
+https://spend-celebrities-money.herokuapp.com/
 
-**npm install**
+
+
+# Run app locally
+**in root folder run : npm install**
 
 **cd client** *(move into client folder)*
 **npm install**
 
-## and then
+## and then in root folder 
 
-**npm run dev**
+**run: npm run dev**
