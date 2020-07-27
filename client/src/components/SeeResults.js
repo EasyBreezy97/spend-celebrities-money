@@ -13,7 +13,7 @@ const SeeResults = ({ purchasedItemsList,remainingMoney }) => {
     });
   };
 
-  return <button className="btn btn-results" onClick={filterResults}>See results</button>;
+  return <button className="btn btn-secondary" onClick={filterResults}>See results</button>;
 };
 
 export default SeeResults;

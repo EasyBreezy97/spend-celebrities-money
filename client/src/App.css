@@ -13,10 +13,25 @@
   color: var(--main-black);
 }
 
+a{
+  text-decoration: none;
+}
+
 h1 {
   font-size: 2rem;
   text-transform: uppercase;
   font-weight: 300;
+}
+.not-found-img{
+  width: 50%;
+  display: block;
+  margin: 0 auto;
+}
+.not-found-header{
+  text-align: center;
+  font-weight: bold;
+  color: var(--main-green);
+  margin-top: 1rem;
 }
 .btn{
   padding: 0.4rem 0.7rem;
@@ -34,8 +49,15 @@ h1 {
 
 }
 
+.btn-big{
+  padding:1rem 2rem;
+  font-weight: bold;
+  letter-spacing: 0.2rem;
+}
+
 .heading {
   color: #fff;
+  display: inline-block;
 }
 
 .container {
@@ -54,6 +76,7 @@ header h1 {
   padding: 0.8rem;
   font-style: italic;
 }
+
 .showcase article {
   padding: 2rem 1rem;
   display: block;
@@ -200,28 +223,65 @@ header h1 {
   margin: 0.5rem;
 }
 
-.btn-buy{
+.btn-primary{
   background-color: var(--main-green);
   color: #fff;
-  width: 3.5rem;
+  min-width: 3.5rem;
 
 }
-.btn-buy:hover{
+.btn-primary:hover{
   background-color: var(--secondary-green);
   cursor: pointer;
   color: var(--main-black);
 
 }
-.btn-results{
+.btn-center{
+  display: block;
+  margin: 1rem auto;
+}
+.btn-secondary{
   display: block;
   margin: 1rem auto;
   background-color: var(--tetriary-green);
 }
-.btn-results:hover{
+.btn-secondary:hover{
   background-color: var(--main-green);
   cursor: pointer;
   color: #fff;
 }
+.results-section{
+  padding: 2rem 0;
+  padding-bottom: 0;
+}
+.results-heading{
+  text-align: center;
+  color: var(--main-green);
+}
+
+.results-table{
+  width: 80%;
+  margin: 1rem auto ;
+  text-align: center;
+  font-weight: bold;
+}
+.results-table th{
+  background-color: var(--tetriary-green);
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  padding: 1rem;
+}
+.results-table tr:nth-child(2n){
+  background-color: var(--tetriary-green);
+}
+.results-table, .results-table tr,.results-table td, .results-table th{
+  border: 1px solid var(--main-green);
+  border-collapse: collapse;
+}
+.results-table img{
+  height: 4rem;
+  padding: 1rem;
+}
+
 footer h4 {
   color: #fff;
   padding: 1rem;
@@ -240,6 +300,9 @@ footer h4 {
   }
 }
 @media screen and (max-width: 768px) {
+  .not-found-img{
+    width: 70%;
+  }
   .container{
     width: 100%;
   }
@@ -265,4 +328,22 @@ footer h4 {
     width: 100%;
   }
 
+}
+
+@media screen and (max-width: 600px) {
+  .not-found-img{
+    width: 80%;
+  }
+  .results-table{
+    display: block;
+    overflow-x: scroll;
+    border: none;
+  }
+}
+
+
+@media print {
+.no-print{
+  display: none;
+}
 }

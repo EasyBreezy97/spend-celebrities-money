@@ -20,9 +20,11 @@ const Celebrities = () => {
 
   return (
     <div className="container">
+      {console.log(celebrities)}
       {celebrities ? (
         <div className="celebrity-grid">
           {celebrities.map((celebrity, i) => (
+
             <div key={i + celebrity} className="inside-grid">
               <Link to={{ pathname: `/spend/${i}`, state: { celebrity } }}>
                 <img

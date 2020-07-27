@@ -17,8 +17,9 @@ const Spend = ({ match, location }) => {
 
     // eslint-disable-next-line
     itemsForSale.map((item) => {
-      items.push({ name: item.name, qty: 0 });
+      items.push({ name: item.name, qty: 0 ,img:item.imgPath});
     });
+
 
     setAllItems(items);
   };

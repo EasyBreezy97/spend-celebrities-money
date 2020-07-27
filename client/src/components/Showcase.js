@@ -14,8 +14,8 @@ const Showcase = () => {
         <h1>spend top 10 rich person's money</h1>
         <p>
           choose your desired billionare buy everything you want and spend all
-          money.well, of course this is fake, you can't spend their money in
-          reality, this is just a game :)
+          money. well, of course this is fake, you can't spend their money in
+          reality, this is just a game 😉
         </p>
       </article>
     </section>

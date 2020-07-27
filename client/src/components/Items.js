@@ -36,7 +36,7 @@ const Items = (props) => {
 
             <button
               onClick={() => props.click(item.price, quantity,item.name)}
-              className="btn btn-buy"
+              className="btn btn-primary"
             >
               Buy
             </button>
